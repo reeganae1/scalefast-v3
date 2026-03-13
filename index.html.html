@@ -452,7 +452,7 @@ footer p{color:var(--muted);font-size:.8rem}
   <a href="#global">Markets</a>
   <a href="#testimonials">Clients</a>
   <a href="#contact">Contact</a>
-  <a href="https://wa.me/919876543210" target="_blank" style="color:#25D366;display:flex;align-items:center;gap:8px"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24" height="24" alt="WhatsApp"> WhatsApp</a>
+  <a href="https://wa.me/918072990862" target="_blank" style="color:#25D366;display:flex;align-items:center;gap:8px"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24" height="24" alt="WhatsApp"> WhatsApp</a>
 </div>
 
 <!-- HERO -->
@@ -468,7 +468,7 @@ footer p{color:var(--muted);font-size:.8rem}
     <p class="hero-sub">ScalefastX partners with founders and leadership teams to build structured revenue engines that convert consistently, scale predictably, and compete globally.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-g">⚡ Book Free Strategy Call</a>
-      <a href="https://wa.me/919876543210" class="btn-wa" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="22" height="22" alt="WhatsApp" style="filter:none"> Chat on WhatsApp</a>
+      <a href="https://wa.me/918072990862" class="btn-wa" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="22" height="22" alt="WhatsApp" style="filter:none"> Chat on WhatsApp</a>
     </div>
   </div>
   <div class="hero-bar">
@@ -823,7 +823,7 @@ footer p{color:var(--muted);font-size:.8rem}
     <p class="ssub" style="margin:0 auto">Book a free 45-minute strategy call. No pitch, no pressure — just a real conversation about your revenue challenges.</p>
     <div class="cta-btns">
       <a href="#contact" class="btn-g">⚡ Book Free Strategy Call</a>
-      <a href="https://wa.me/919876543210" class="btn-wa" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="22" height="22" alt="WhatsApp" style="filter:none"> WhatsApp Us Now</a>
+      <a href="https://wa.me/918072990862" class="btn-wa" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="22" height="22" alt="WhatsApp" style="filter:none"> WhatsApp Us Now</a>
     </div>
   </div>
 </section>
@@ -858,7 +858,7 @@ footer p{color:var(--muted);font-size:.8rem}
       </form>
       <div class="ci rev-r">
         <div class="ci-card"><div class="ci-ico" style="background:linear-gradient(135deg,rgba(37,99,235,.3),rgba(29,78,216,.2))">📧</div><div><h4>Email</h4><p>info@scalefastx.com</p></div></div>
-        <div class="ci-card"><div class="ci-ico" style="background:linear-gradient(135deg,rgba(37,211,102,.3),rgba(18,140,126,.2))">💬</div><div><h4>WhatsApp</h4><p><a href="https://wa.me/919876543210" target="_blank" style="color:var(--white);text-decoration:none">+91 98765 43210</a></p></div></div>
+        <div class="ci-card"><div class="ci-ico" style="background:linear-gradient(135deg,rgba(37,211,102,.3),rgba(18,140,126,.2))">💬</div><div><h4>WhatsApp</h4><p><a href="https://wa.me/918072990862" target="_blank" style="color:var(--white);text-decoration:none">+91 98765 43210</a></p></div></div>
         <div class="ci-card"><div class="ci-ico" style="background:linear-gradient(135deg,rgba(10,102,194,.3),rgba(0,79,157,.2))">🔗</div><div><h4>LinkedIn</h4><p><a href="https://linkedin.com" target="_blank" style="color:var(--white);text-decoration:none">Founder Profile →</a></p></div></div>
         <div class="ci-card"><div class="ci-ico" style="background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(16,185,129,.08))">❤️</div><div><h4>5% Impact Pledge</h4><p>Every client helps change lives</p></div></div>
         <div style="display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:11px;background:var(--glass);border:1px solid var(--border)"><span style="font-size:1.2rem">⚡</span><div><div style="font-size:.78rem;font-weight:700;color:var(--gold)">We respond within 24 hours</div><div style="font-size:.75rem;color:var(--muted)">Usually much faster on WhatsApp</div></div></div>
@@ -1059,7 +1059,7 @@ function initWABot(){
 function appendWAMsg(from,html){const body=document.getElementById('wa-bot-body');if(!body)return;const w=document.createElement('div');w.className='wa-msg-wrap wa-'+from;const b=document.createElement('div');b.className='wa-bubble';b.innerHTML=html;w.appendChild(b);body.appendChild(w);body.scrollTop=body.scrollHeight;}
 function renderWAQRs(){const body=document.getElementById('wa-bot-body');if(!body)return;const qr=document.createElement('div');qr.className='wa-quick-replies';waQRs.forEach(q=>{const btn=document.createElement('button');btn.className='wa-qr-btn';btn.textContent=q.label;btn.onclick=()=>{sendWAReply(q.label,q.key);qr.remove()};qr.appendChild(btn)});body.appendChild(qr);body.scrollTop=body.scrollHeight;}
 function sendWAReply(label,key){appendWAMsg('user',label);const body=document.getElementById('wa-bot-body');const typing=document.createElement('div');typing.className='wa-msg-wrap wa-bot';typing.id='wa-typing';typing.innerHTML='<div class="wa-bubble wa-typing-dots"><span></span><span></span><span></span></div>';if(body){body.appendChild(typing);body.scrollTop=body.scrollHeight;}setTimeout(()=>{const t=document.getElementById('wa-typing');if(t)t.remove();appendWAMsg('bot',waBotReplies[key]||'Thanks! We\'ll get back to you shortly.');setTimeout(()=>{appendWAMsg('bot','Anything else I can help with?');setTimeout(renderWAQRs,300);},700);},1400);}
-function sendWAInput(){const inp=document.getElementById('wa-input');if(!inp||!inp.value.trim())return;const txt=inp.value.trim();inp.value='';appendWAMsg('user',txt);setTimeout(()=>appendWAMsg('bot','Thanks! For instant help, reach us on WhatsApp: <a href="https://wa.me/919876543210" target="_blank" style="color:#4ADE80">+91 98765 43210</a>'),1000);}
+function sendWAInput(){const inp=document.getElementById('wa-input');if(!inp||!inp.value.trim())return;const txt=inp.value.trim();inp.value='';appendWAMsg('user',txt);setTimeout(()=>appendWAMsg('bot','Thanks! For instant help, reach us on WhatsApp: <a href="https://wa.me/918072990862" target="_blank" style="color:#4ADE80">+91 98765 43210</a>'),1000);}
 document.getElementById('wa-input').addEventListener('keydown',e=>{if(e.key==='Enter')sendWAInput();});
 
 /* ── EDIT MODE ── */
